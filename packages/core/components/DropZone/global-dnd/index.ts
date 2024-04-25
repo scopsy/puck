@@ -114,12 +114,30 @@ const startGlobalDnd = (
             width: ${rect.width}px;
             height: ${rect.height}px;
             user-select; none;
+            pointer-events: none;
 `
           );
 
           setTimeout(() => {
             placeholder?.remove();
-            el.removeAttribute("style");
+            // el.removeAttribute("style");
+
+            const transformStyle = el.getAttribute("style");
+
+            if (transformStyle) {
+              // delete transformStyle["z-index"];
+              el?.setAttribute("style", transformStyle);
+
+              const bubbleFixedScroll = (e) => {
+                if (e.deltaMode && el?.parentElement) {
+                  el.parentElement.scrollTop += e.deltaY;
+                }
+              };
+
+              el.addEventListener("wheel", bubbleFixedScroll);
+            }
+
+            // drag.el.setAttribute("style", transformStyle);
           }, timings.minDropTime);
 
           let targetIndex = draggables.indexOf(lastImpact.el);
@@ -340,6 +358,15 @@ const startGlobalDnd = (
         }
 
         // PAINT
+        // const transformStyle = `
+        //     transform: translateX(${deltaX}px) translateY(${deltaY}px);
+        //     z-index: 1;
+        //     user-select; none;
+        //     pointer-events: none;
+
+        //   `;
+
+        // TODO Position fixed fucks with scroll, but without it we need to factor in scroll position of parents
         const transformStyle = `
             transform: translateX(${deltaX}px) translateY(${deltaY}px);
             z-index: 1;
@@ -349,12 +376,13 @@ const startGlobalDnd = (
             width: ${drag.rect.width}px;
             height: ${drag.rect.height}px;
             user-select; none;
-          `;
+            pointer-events: none;
+
+        //   `;
 
         drag.el.setAttribute("style", transformStyle);
 
         if (
-          //   true
           !impact ||
           impact.el !== lastImpact?.el ||
           impact.position !== lastImpact.position

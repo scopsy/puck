@@ -39,7 +39,7 @@ export const conf: UserConfig = {
     defaultProps: {
       title: "My Page",
     },
-    render: Root,
+    // render: Root,
   },
   categories: {
     layout: {
