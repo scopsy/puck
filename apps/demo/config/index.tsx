@@ -73,15 +73,15 @@ export const initialData: Record<string, Data> = {
       {
         type: "Hero",
         props: {
-          title: "This page was built with Puck",
+          title: "This is the power of Echo",
           description:
-            "Puck is the self-hosted visual editor for React. Bring your own components and make site changes instantly, without a deploy.",
+            "Implemented by the engineer, managed by anyone.",
           buttons: [
             {
-              label: "Visit GitHub",
-              href: "https://github.com/measuredco/puck",
+              label: "Visit Novu",
+              href: "https://novu.co",
             },
-            { label: "Edit this page", href: "/edit", variant: "secondary" },
+            { label: "Visit Docs", href: "https://docs.novu.co", variant: "secondary" },
           ],
           id: "Hero-1687283596554",
           height: "",
@@ -102,7 +102,7 @@ export const initialData: Record<string, Data> = {
         props: {
           align: "center",
           level: "2",
-          text: "Drag-and-drop your own React components",
+          text: "Drag-and-drop Custom or pre-built components",
           padding: "0px",
           size: "xxl",
           id: "Heading-1687297593514",
@@ -116,7 +116,7 @@ export const initialData: Record<string, Data> = {
         type: "Text",
         props: {
           align: "center",
-          text: "Configure Puck with your own components to make change for your marketing pages without a developer.",
+          text: "You can use Beutiful Novu created components, or extend with your own.",
           padding: "0px",
           size: "m",
           id: "Text-1687297621556",
@@ -162,7 +162,7 @@ export const initialData: Record<string, Data> = {
         type: "Text",
         props: {
           align: "center",
-          text: 'This page demonstrates Puck configured with a custom component library. This component is called "Stats", and contains some made-up numbers. You can configure any page by adding "/edit" onto the URL.',
+          text: 'This page demonstrates Novu configured with a custom component library. This component is called "Stats", and contains some made-up numbers. You can configure any page by adding "/edit" onto the URL.',
           padding: "0px",
           size: "m",
           id: "Text-1687284565722",
@@ -196,7 +196,7 @@ export const initialData: Record<string, Data> = {
         props: {
           align: "center",
           level: 2,
-          text: "Extending Puck",
+          text: "Extending Novu",
           padding: "0px",
           size: "xxl",
           id: "Heading-1687296184321",
@@ -210,7 +210,7 @@ export const initialData: Record<string, Data> = {
         type: "Text",
         props: {
           align: "center",
-          text: "Puck can also be extended with plugins and headless CMS content fields, transforming Puck into the perfect tool for your Content Ops.",
+          text: "Novu can also be extended with plugins and headless CMS content fields, transforming Novu into the perfect tool for your Content Ops.",
           padding: "0px",
           size: "m",
           id: "Text-1687296579834",
@@ -260,7 +260,7 @@ export const initialData: Record<string, Data> = {
         type: "Text",
         props: {
           align: "center",
-          text: "Browse the Puck GitHub to get started, or try editing this page",
+          text: "Browse the Novu GitHub to get started, or try editing this page",
           padding: "0px",
           size: "m",
           id: "Text-1687299305686",
@@ -277,7 +277,7 @@ export const initialData: Record<string, Data> = {
           buttons: [
             {
               label: "Visit GitHub",
-              href: "https://github.com/measuredco/puck",
+              href: "https://github.com/measuredco/Novu",
             },
             { label: "Edit this page", href: "/edit", variant: "secondary" },
           ],
@@ -290,7 +290,7 @@ export const initialData: Record<string, Data> = {
         props: { size: "96px", id: "VerticalSpace-1687284290127" },
       },
     ],
-    root: { props: { title: "Puck Example" } },
+    root: { props: { title: "Novu Example" } },
     zones: {
       "Columns-2d650a8ceb081a2c04f3a2d17a7703ca6efb0d06:column-0": [
         {
@@ -298,7 +298,7 @@ export const initialData: Record<string, Data> = {
           props: {
             title: "Built for content teams",
             description:
-              "Puck enables content teams to make changes to their content without a developer or breaking the UI.",
+              "Novu enables content teams to make changes to their content without a developer or breaking the UI.",
             icon: "pen-tool",
             mode: "flat",
             id: "Card-0d9077e00e0ad66c34c62ab6986967e1ce04f9e4",
@@ -324,7 +324,7 @@ export const initialData: Record<string, Data> = {
           props: {
             title: "No vendor lock-in",
             description:
-              "Completely open-source, Puck is designed to be integrated into your existing React application.",
+              "Completely open-source, Novu is designed to be integrated into your existing React application.",
             icon: "github",
             mode: "flat",
             id: "Card-133a61826f0019841aec6f0aec011bf07e6bc6de",
@@ -363,7 +363,7 @@ export const initialData: Record<string, Data> = {
           props: {
             title: "Custom plugins",
             description:
-              "Create your own plugin to extend Puck for your use case using React.",
+              "Create your own plugin to extend Novu for your use case using React.",
             icon: "feather",
             mode: "card",
             id: "Card-3314e8b24aa52843ce22ab7424b8f3b8064acfdf",
